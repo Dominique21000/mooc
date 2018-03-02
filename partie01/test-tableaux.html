@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs CSS</title>
+  </head>
+  <body>
+    <form>
+      <table border=1>
+      <tr><td></td><td>Salle 1</td><td>Salle 2</td></tr>
+      <tr><td>Lundi</td><td>X</td><td>X</td></tr>
+      <tr><td>Mardi</td><td></td><td></td></tr>
+      <tr><td>Mercredi</td><td>X</td><td></td></tr>
+      <tr><td>Jeudi</td><td></td><td>X</td></tr>
+      <tr><td>Vendredi</td><td>X</td><td>X</td></tr>
+      </table>
+    </form> 
+
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+      $(function() {
+        $('td').css('text-align','center');
+        $('tr:even').css('color','blue');
+      }); 
+    </script>
+  </body>
+</html>

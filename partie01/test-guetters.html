@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs CSS</title>
+  </head>
+  <body>
+    <div id="listes">
+      <a href="http://api.jquery.com">API jQuery</a><br>
+      <a href="http://docs.jquery.com">Documentation jQuery</a><br>
+    </div>
+
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+      $(function() {
+        var test = $('a').attr('href').[1];
+        document.write(test);
+      }); 
+
+      $('#logo').attr('src','logo.gif');
+      $('#logo').attr({src: 'logo.gif', alt: 'Logo de la société', width: '200px'});
+      $('a').attr('target', function() {
+        alert("")
+        if(this.host == location.host) return '_self'
+        else return '_blank'
+      });
+    </script>
+  </body>
+</html>
