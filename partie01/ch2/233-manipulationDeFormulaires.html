@@ -34,7 +34,7 @@
     </div>
 
 
-    <script src="../jquery-3.3.1.js"></script>
+    <script src="../../jquery-3.3.1.js"></script>
     <script>
         $(function(){
 
@@ -45,8 +45,13 @@
             $(':radio').val(['H']);
                    
             $('#nomVal').html('nom : '+ $('#nom').val() + ' mot de passe = ' + $('#pass').val());
+
+            
+         });
+
+         function surchangement(){
+              $('#nomVal').html('nom : '+ $('#nom').val() + ' mot de passe = ' + $('#pass').val()); 
          }
-      });
     </script>
   </body>
 </html>
