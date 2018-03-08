@@ -1,0 +1,23 @@
+<!doctype <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Resize</title>
+    </head>
+    <body>  
+        Redimentionnez moi pour voir la taille :-)
+
+        <span id="resultat"></span>
+
+        <script src="../../jquery-3.3.1.js"></script>
+        <script>
+            $(function() {
+                $(window).resize(function() {
+                var taille = 'Taille de la fenêtre : ' + $(window).width() + ' px x ' + $(window).height() + ' px';
+                $('#resultat').text(taille);
+            });
+        });
+        </script>
+    </body>
+</html>
+

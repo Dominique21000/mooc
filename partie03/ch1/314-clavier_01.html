@@ -1,0 +1,30 @@
+<!doctype html>
+    <html>
+        <title>Clavier 01</title>
+        <meta charset="utf-8">
+    
+    <body>
+        <style type="text/css">
+            #lumiere {
+                width: 10px;
+                height: 10px; 
+                background-color: white; }
+        </style>
+  
+        <div id="lumiere"></div>
+        <textarea id="target"></textarea>
+  
+        <script src="../../jquery-3.3.1.js"></script>
+        <script>
+            $(function() {
+                $('#target').keydown(function(){
+                    $('#lumiere').css('background-color', 'green');
+                });
+            
+                $('#target').keyup(function(){
+                    $('#lumiere').css('background-color', 'white');
+                });
+            });
+        </script>
+    </body>
+</html>
